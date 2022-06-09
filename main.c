@@ -27,13 +27,13 @@ int main(void)
     {
       i = 0;
 
-      if (mem(GPIOB_ODR) & (1 << 3))
+      if (mem(GPIOB_ODR) & (1 << 7))
       {
-        mem(GPIOB_ODR) &= ~(1 << 3);
+        mem(GPIOB_ODR) &= ~(1 << 7);
       }
       else
       {
-        mem(GPIOB_ODR) |= (1 << 3);
+        mem(GPIOB_ODR) |= (1 << 7);
       }
     }
     i++;
