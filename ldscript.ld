@@ -67,7 +67,7 @@ SECTIONS
   } >RAM
 
   .heap : {
-        _sheap= .;
+        _sheap = .;
         /* 1KiB heap */ 
         . = . + 1024 ;
         . = ALIGN(4);
